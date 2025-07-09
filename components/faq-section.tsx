@@ -10,17 +10,12 @@ export default function FaqSection() {
     {
       question: "What technologies do you specialize in?",
       answer:
-        "I primarily work with React, TypeScript, Node.js, and Python. I also have experience with various databases, cloud platforms, and modern development tools.",
+        "I primarily work with C++, React, TypeScript, Node.js, and Python. I also have experience with various databases, cloud platforms, and modern development tools.",
     },
     {
       question: "Are you available for freelance work?",
       answer:
         "Yes! I'm always open to discussing interesting projects. Feel free to reach out through the contact section to discuss your needs.",
-    },
-    {
-      question: "How long have you been developing?",
-      answer:
-        "I've been professionally developing for over 5 years, with a focus on web applications and user experience design.",
     },
     {
       question: "Do you work with teams or solo?",

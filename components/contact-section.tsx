@@ -16,15 +16,15 @@ export default function ContactSection() {
             className="flex items-center justify-center space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
           >
             <Mail className="w-5 h-5 text-gray-600" />
-            <span className="text-gray-800">hello@example.com</span>
+            <span className="text-gray-800">vatsal31415@gmail.com</span>
           </a>
         </div>
 
         <div className="flex justify-center space-x-6">
           {[
-            { icon: Github, href: "#", label: "GitHub" },
-            { icon: Linkedin, href: "#", label: "LinkedIn" },
-            { icon: Twitter, href: "#", label: "Twitter" },
+            { icon: Github, href: "https://github.com/vatsal-afk", label: "GitHub" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/vatsal-agarwal-b67315280/", label: "LinkedIn" },
+            { icon: Twitter, href: "https://x.com/virtualPengui9", label: "Twitter" },
           ].map((social) => {
             const Icon = social.icon
             return (

@@ -3,9 +3,9 @@ import { Link, ExternalLink } from "lucide-react"
 export default function LinksWindow() {
   const links = [
     { name: "portfolio-site", url: "#", description: "Complete portfolio showcase", type: "web" },
-    { name: "github-profile", url: "https://github.com", description: "Source code & repositories", type: "code" },
-    { name: "linkedin-profile", url: "https://linkedin.com", description: "Professional network", type: "social" },
-    { name: "dev-blog", url: "#", description: "Technical articles & tutorials", type: "blog" },
+    { name: "github-profile", url: "https://github.com/vatsal-afk/", description: "Source code & repositories", type: "code" },
+    { name: "linkedin-profile", url: "https://www.linkedin.com/in/vatsal-agarwal-b67315280/", description: "Professional network", type: "social" },
+    { name: "dev-blog", url: "https://medium.com/@virtualPengui9s", description: "Technical articles & tutorials", type: "blog" },
     { name: "resume.pdf", url: "#", description: "Latest resume download", type: "file" },
   ]
 

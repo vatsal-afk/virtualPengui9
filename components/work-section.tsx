@@ -1,21 +1,21 @@
 export default function WorkSection() {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce solution built with React and Node.js",
-      tech: ["React", "Node.js", "PostgreSQL"],
-      status: "Live",
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management tool with real-time updates",
-      tech: ["Next.js", "Socket.io", "MongoDB"],
+      title: "Aethereal : Procedural Graphics Renderer",
+      description: "Developed a real-time fractal rendering engine in C++ using OpenGL to visualize complex sets like Mandelbrot and Julia.",
+      tech: ["C++", "OpenGL", "ImGui", "GLSL"],
       status: "In Progress",
     },
     {
-      title: "Weather Dashboard",
-      description: "A beautiful weather app with location-based forecasts",
-      tech: ["React", "Weather API", "Chart.js"],
+      title: "Facto",
+      description: "A Real Time Misinformation Detection System for Live Broadcast Media",
+      tech: ["Next.js", "Ffmpeg", "MongoDB", "Solidity", "NLP", "Sentiment Analysis"],
+      status: "Completed",
+    },
+    {
+      title: "Multiplayer Car Racing Game with Mobile Controller",
+      description: "Built a real-time mobile controller app using React Native and Express.js to enable motion-based steering for a multiplayer car racing game developed in Unity.",
+      tech: ["React Native", "Expo", "WebSockets", "Unity", "C#"],
       status: "Completed",
     },
   ]

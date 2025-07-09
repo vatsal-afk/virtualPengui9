@@ -5,9 +5,9 @@ export default function Footer() {
     <div className="bg-sky-100 px-6 py-4">
       <div className="flex justify-center space-x-4 mb-3">
         {[
-          { icon: Twitter, href: "#", label: "Twitter" },
-          { icon: Github, href: "#", label: "GitHub" },
-          { icon: Linkedin, href: "#", label: "LinkedIn" },
+          { icon: Twitter, href: "https://x.com/virtualPengui9", label: "Twitter" },
+          { icon: Github, href: "https://github.com/vatsal-afk", label: "GitHub" },
+          { icon: Linkedin, href: "https://www.linkedin.com/in/vatsal-agarwal-b67315280/", label: "LinkedIn" },
         ].map((social) => {
           const Icon = social.icon
           return (
@@ -22,7 +22,7 @@ export default function Footer() {
           )
         })}
       </div>
-      <p className="text-center text-sm text-gray-600">© 2024 Alex Developer</p>
+      <p className="text-center text-sm text-gray-600">© 2025 vatsal-afk</p>
     </div>
   )
 }

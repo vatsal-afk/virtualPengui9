@@ -3,23 +3,23 @@ import { Briefcase, ExternalLink, Github } from "lucide-react"
 export default function WorkWindow() {
   const projects = [
     {
-      name: "ecommerce-platform",
-      description: "Full-stack e-commerce solution",
-      tech: ["React", "Node.js", "PostgreSQL"],
-      status: "production",
-      links: { demo: "#", github: "#" },
-    },
-    {
-      name: "task-manager",
-      description: "Real-time collaborative task management",
-      tech: ["Next.js", "Socket.io", "MongoDB"],
+      name: "Aethereal",
+      description: "Procedural Graphics Rendering Engine",
+      tech: ["C++", "OpenGL", "ImGui", "GLSL"],
       status: "development",
       links: { demo: "#", github: "#" },
     },
     {
-      name: "weather-dashboard",
-      description: "Beautiful weather forecasting app",
-      tech: ["React", "Weather API", "Chart.js"],
+      name: "Facto",
+      description: "Real-time Misinformation Detection System for Live Broadcast Media",
+      tech: ["Next.js", "Ffmpeg", "MongoDB", "Solidity", "NLP", "Sentiment Analysis"],
+      status: "completed",
+      links: { demo: "#", github: "#" },
+    },
+    {
+      name: "Multiplayer Car Racing Game with Mobile Controller",
+      description: "Built a real-time mobile controller app using React Native and Express.js to enable motion-based steering for a multiplayer car racing game developed in Unity.",
+      tech: ["React Native", "Expo", "WebSockets", "Unity", "C#"],
       status: "completed",
       links: { demo: "#", github: "#" },
     },

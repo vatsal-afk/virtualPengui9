@@ -10,7 +10,7 @@ export default function FaqWindow() {
     {
       question: "What technologies do you specialize in?",
       answer:
-        "I work primarily with JavaScript/TypeScript, React, Node.js, and Python. I also have experience with cloud platforms like AWS and modern DevOps practices.",
+        "I work primarily with JavaScript/TypeScript, React, Node.js, C++ and Python. I also have experience with cloud platforms like AWS and modern DevOps practices.",
     },
     {
       question: "Are you available for freelance work?",

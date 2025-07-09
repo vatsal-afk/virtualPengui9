@@ -20,7 +20,7 @@ export default function MainWindow({ onOpenWindow }: MainWindowProps) {
       {/* Terminal Header */}
       <div className="flex items-center space-x-2 mb-6 pb-2 border-b border-gray-700">
         <Terminal className="w-5 h-5 text-green-400" />
-        <span className="text-green-400">alex@portfolio:~$</span>
+        <span className="text-green-400">vatsal-afk@portfolio:~$</span>
         <span className="text-gray-400">whoami</span>
       </div>
 
@@ -29,11 +29,8 @@ export default function MainWindow({ onOpenWindow }: MainWindowProps) {
         <div className="text-green-400">
           <span className="text-gray-500">{">"}</span> Full-Stack Developer
         </div>
-        <div className="text-blue-400">
-          <span className="text-gray-500">{">"}</span> UI/UX Designer
-        </div>
         <div className="text-yellow-400">
-          <span className="text-gray-500">{">"}</span> Open Source Contributor
+          <span className="text-gray-500">{">"}</span> Mathematics and Physics Enthusiast
         </div>
       </div>
 

@@ -21,7 +21,7 @@ export default function AboutWindow() {
 
         <div className="pl-4 space-y-2 text-gray-400">
           <p>Hello! I'm a passionate full-stack developer who loves building efficient, scalable applications.</p>
-          <p>I enjoy working with modern technologies and contributing to open-source projects.</p>
+          <p>I enjoy working with modern technologies.</p>
         </div>
 
         <div className="mt-6">
@@ -33,7 +33,7 @@ export default function AboutWindow() {
           <div className="flex items-center space-x-2">
             <Code className="w-4 h-4 text-yellow-400" />
             <span className="text-gray-400">Languages:</span>
-            <span className="text-gray-300">JavaScript, TypeScript, Python, Go</span>
+            <span className="text-gray-300">C++, JavaScript, TypeScript, Python</span>
           </div>
           <div className="flex items-center space-x-2">
             <Coffee className="w-4 h-4 text-orange-400" />
@@ -45,7 +45,7 @@ export default function AboutWindow() {
         <div className="mt-6 p-3 bg-gray-800 border border-gray-700 rounded">
           <div className="text-green-400 text-xs mb-1">$ cat status.txt</div>
           <div className="text-gray-400 text-xs">Currently: Available for new opportunities</div>
-          <div className="text-gray-400 text-xs">Location: Remote / San Francisco</div>
+          <div className="text-gray-400 text-xs">Location: Remote / India</div>
         </div>
       </div>
     </div>

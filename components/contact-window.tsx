@@ -18,13 +18,13 @@ export default function ContactWindow() {
           <div className="text-green-400 text-sm mb-2">$ cat contact.txt</div>
           <div className="space-y-1 text-sm">
             <div>
-              <span className="text-gray-500">email:</span> <span className="text-blue-400">alex@example.com</span>
+              <span className="text-gray-500">email:</span> <span className="text-blue-400">vatsal31415@gmail.com</span>
             </div>
             <div>
               <span className="text-gray-500">status:</span> <span className="text-green-400">available</span>
             </div>
             <div>
-              <span className="text-gray-500">timezone:</span> <span className="text-gray-300">UTC-8 (PST)</span>
+              <span className="text-gray-500">timezone:</span> <span className="text-gray-300">UTC+5:30 (IST)</span>
             </div>
           </div>
         </div>
@@ -38,9 +38,9 @@ export default function ContactWindow() {
       <div className="space-y-2">
         <div className="text-gray-500 text-sm mb-3">Social links:</div>
         {[
-          { icon: Github, label: "github", url: "#", color: "text-gray-400" },
-          { icon: Linkedin, label: "linkedin", url: "#", color: "text-blue-400" },
-          { icon: Twitter, label: "twitter", url: "#", color: "text-sky-400" },
+          { icon: Github, label: "github", url: "https://github.com/vatsal-afk", color: "text-gray-400" },
+          { icon: Linkedin, label: "linkedin", url: "https://www.linkedin.com/in/vatsal-agarwal-b67315280/", color: "text-blue-400" },
+          { icon: Twitter, label: "twitter", url: "https://x.com/virtualPengui9", color: "text-sky-400" },
         ].map((social) => {
           const Icon = social.icon
           return (
@@ -62,7 +62,7 @@ export default function ContactWindow() {
         <div className="flex items-center space-x-2 text-sm">
           <Send className="w-4 h-4 text-green-400" />
           <span className="text-gray-400">Quick contact:</span>
-          <a href="mailto:alex@example.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+          <a href="mailto:vatsal31415@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
             Send email
           </a>
         </div>

@@ -2,11 +2,10 @@ import { ExternalLink } from "lucide-react"
 
 export default function LinksSection() {
   const links = [
-    { title: "GitHub", url: "https://github.com", description: "Check out my code repositories" },
-    { title: "LinkedIn", url: "https://linkedin.com", description: "Connect with me professionally" },
-    { title: "Blog", url: "#", description: "Read my thoughts on web development" },
+    { title: "GitHub", url: "https://github.com/vatsal-afk/", description: "Check out my code repositories" },
+    { title: "LinkedIn", url: "https://www.linkedin.com/in/vatsal-agarwal-b67315280/", description: "Connect with me professionally" },
+    { title: "Blog", url: "https://medium.com/@virtualPengui9", description: "Read my thoughts" },
     { title: "Resume", url: "#", description: "Download my latest resume" },
-    { title: "Dribbble", url: "https://dribbble.com", description: "View my design work" },
   ]
 
   return (
