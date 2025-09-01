@@ -49,7 +49,7 @@ const projects: Project[] = [
     image: "/image copy.png",
     demo: "https://drive.google.com/file/d/1BC_-vWuE6aJfjBp0z2tDwLyhrc1BiuYQ/view?usp=sharing",
     code: "https://github.com/vatsal-afk/Aethereal",
-    tags: ["OpenGL", "C++", "ImGUI", "Shaderss"],
+    tags: ["OpenGL", "C++", "ImGUI", "Shaders"],
   },
   {
     title: "Multiplayer Car Racing Game",
@@ -178,59 +178,59 @@ export default function Page() {
       </Window>
       )}
 
-      {open.projects && (
-        <Window
-          id="projects"
-          title="projects"
-          className="w-[min(95vw,1300px)]"
-          initialCenter
-          style={{ zIndex: z(2) }}
-          onFocus={() => setOpen((s) => ({ ...s, projects: true }))}
-          onClose={() => setOpen((s) => ({ ...s, projects: false }))}
-        >
-          <div className="p-4 md:p-6">
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {projects.map((p) => (
-                <article key={p.title} className="rounded-lg border overflow-hidden bg-card flex flex-col">
-                  <img
-                    src={p.image || "/placeholder.svg"}
-                    alt={`${p.title} screenshot`}
-                    className="aspect-video object-cover border-b"
-                  />
-                  <div className="p-4 flex flex-col gap-2">
-                    <h3 className="font-semibold">{p.title}</h3>
-                    <p className="text-sm text-muted-foreground">{p.description}</p>
-                    <div className="flex flex-wrap gap-2 mt-1">
-                      {p.tags.map((t) => (
-                        <span key={t} className="text-xs rounded-full border px-2 py-0.5">
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="mt-3 flex items-center gap-2">
-                      <a
-                        href={p.demo}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center justify-center rounded-md border px-3 py-1.5 text-sm bg-primary text-primary-foreground hover:opacity-90"
-                      >
-                        Demo
-                      </a>
-                      <a
-                        href={p.code}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center justify-center rounded-md border px-3 py-1.5 text-sm"
-                      >
-                        Code
-                      </a>
-                    </div>
-                  </div>
-                </article>
-              ))}
+        {open.projects && (
+  <Window
+    id="projects"
+    title="projects"
+      className="w-[min(95vw,1300px)] h-[min(80vh,700px)] overflow-y-auto" // Move overflow here
+    initialCenter
+    style={{ zIndex: z(2) }}
+    onFocus={() => setOpen((s) => ({ ...s, projects: true }))}
+    onClose={() => setOpen((s) => ({ ...s, projects: false }))}
+  >
+     <div className="p-4 md:p-6">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {projects.map((p) => (
+          <article key={p.title} className="rounded-lg border overflow-hidden bg-card flex flex-col">
+            <img
+              src={p.image || "/placeholder.svg"}
+              alt={`${p.title} screenshot`}
+              className="aspect-video object-cover border-b"
+            />
+            <div className="p-4 flex flex-col gap-2">
+              <h3 className="font-semibold">{p.title}</h3>
+              <p className="text-sm text-muted-foreground">{p.description}</p>
+              <div className="flex flex-wrap gap-2 mt-1">
+                {p.tags.map((t) => (
+                  <span key={t} className="text-xs rounded-full border px-2 py-0.5">
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-3 flex items-center gap-2">
+                <a
+                  href={p.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-md border px-3 py-1.5 text-sm bg-primary text-primary-foreground hover:opacity-90"
+                >
+                  Demo
+                </a>
+                <a
+                  href={p.code}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-md border px-3 py-1.5 text-sm"
+                >
+                  Code
+                </a>
+              </div>
             </div>
-          </div>
-        </Window>
+          </article>
+        ))}
+      </div>
+    </div>
+  </Window>
       )}
 
       {open.contact && (
