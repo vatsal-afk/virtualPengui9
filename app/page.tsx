@@ -21,7 +21,7 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Facto",
-    description: "Real-Time Misinformation Detection and Verification System for Broadcast Media ",
+    description: "Real-Time Misinformation Detection and Verification System for Broadcast Media",
     image: "/image.png",
     demo: "https://youtu.be/aau0Zq4QEDk?si=mXVYLUpbFXAysw5M",
     code: "https://github.com/vatsal-afk/Facto",
@@ -50,7 +50,15 @@ const projects: Project[] = [
     demo: "https://drive.google.com/file/d/1BC_-vWuE6aJfjBp0z2tDwLyhrc1BiuYQ/view?usp=sharing",
     code: "https://github.com/vatsal-afk/Aethereal",
     tags: ["OpenGL", "C++", "ImGUI", "Shaderss"],
-  }
+  },
+  {
+    title: "Multiplayer Car Racing Game",
+    description: "Turned phones into steering wheels with React Native, WebSockets, and Unity for real-time multiplayer racing.",
+    image: "/image copy 3.png",
+    demo: "",
+    code: "https://github.com/TinkeringLab-IITR/Racing-Game",
+    tags: ["Unity", "WebSockets", "React Native", "Gyro"],
+  },
 ]
 
 // simple z-index manager
@@ -174,14 +182,14 @@ export default function Page() {
         <Window
           id="projects"
           title="projects"
-          className="w-[min(95vw,980px)]"
+          className="w-[min(95vw,1300px)]"
           initialCenter
           style={{ zIndex: z(2) }}
           onFocus={() => setOpen((s) => ({ ...s, projects: true }))}
           onClose={() => setOpen((s) => ({ ...s, projects: false }))}
         >
           <div className="p-4 md:p-6">
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {projects.map((p) => (
                 <article key={p.title} className="rounded-lg border overflow-hidden bg-card flex flex-col">
                   <img
@@ -242,7 +250,7 @@ export default function Page() {
             </p>
             <img src="/cute-character-holding-letter.png" alt="" className="mx-auto my-6 max-h-48" />
             <a
-              href="mailto:hi@example.com"
+              href="mailto:vatsal31415@gmail.com"
               className="inline-flex items-center justify-center rounded-md border bg-primary text-primary-foreground px-4 py-2"
             >
               ✉️ Send me an email

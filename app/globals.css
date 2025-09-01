@@ -2,145 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-@custom-variant dark (&:is(.dark *));
-
 :root {
-  --background: #f2f2f2; /* bright white */
-  --foreground: #2e2e2e; /* dark gray text */
+  --background: 0 0% 95%; /* #f2f2f2 converted to HSL */
+  --foreground: 0 0% 18%; /* #2e2e2e converted to HSL */
 
-  --card: #ffffff;
-  --card-foreground: #2e2e2e;
+  --card: 0 0% 100%; /* #ffffff */
+  --card-foreground: 0 0% 18%;
 
-  --popover: #ffffff;
-  --popover-foreground: #2e2e2e;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 18%;
 
-  --primary: #3b8a3b; /* emerald green */
-  --primary-foreground: #f2f2f2;
+  --primary: 120 48% 38%; /* #3b8a3b converted to HSL */
+  --primary-foreground: 0 0% 95%;
 
-  --secondary: #1a4d1a; /* deep green */
-  --secondary-foreground: #f2f2f2;
+  --secondary: 120 48% 20%; /* #1a4d1a converted to HSL */
+  --secondary-foreground: 0 0% 95%;
 
-  --muted: #e9efe9; /* soft light greenish tint */
-  --muted-foreground: #4b4b4b;
+  --muted: 120 25% 92%; /* #e9efe9 converted to HSL */
+  --muted-foreground: 0 0% 29%;
 
-  --accent: #a2d8a2; /* light green accent */
-  --accent-foreground: #2e2e2e;
+  --accent: 120 47% 75%; /* #a2d8a2 converted to HSL */
+  --accent-foreground: 0 0% 18%;
 
-  --destructive: #dc2626;
-  --destructive-foreground: #ffffff;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
 
-  --border: #2e2e2e22; /* subtle dark border for light mode */
-  --input: #ffffff;
-  --ring: rgba(59, 138, 59, 0.45);
+  --border: 0 0% 89%;
+  --input: 0 0% 100%;
+  --ring: 120 48% 38%;
 
-  --chart-1: #3b8a3b;
-  --chart-2: #1a4d1a;
-  --chart-3: #a2d8a2;
-  --chart-4: #2e2e2e;
-  --chart-5: #dc2626;
+  --chart-1: 120 48% 38%;
+  --chart-2: 120 48% 20%;
+  --chart-3: 120 47% 75%;
+  --chart-4: 0 0% 18%;
+  --chart-5: 0 84% 60%;
 
   --radius: 0.6rem;
-
-  --sidebar: #ffffff;
-  --sidebar-foreground: #2e2e2e;
-  --sidebar-primary: #3b8a3b;
-  --sidebar-primary-foreground: #f2f2f2;
-  --sidebar-accent: #a2d8a2;
-  --sidebar-accent-foreground: #2e2e2e;
-  --sidebar-border: #2e2e2e22;
-  --sidebar-ring: rgba(59, 138, 59, 0.45);
 }
 
 .dark {
-  /* dark desk with classy green accents */
-  --background: #2e2e2e; /* dark gray */
-  --foreground: #f2f2f2; /* bright white */
+  --background: 0 0% 18%; /* #2e2e2e converted to HSL */
+  --foreground: 0 0% 95%; /* #f2f2f2 converted to HSL */
 
-  --card: #222222;
-  --card-foreground: #f2f2f2;
+  --card: 0 0% 13%; /* #222222 */
+  --card-foreground: 0 0% 95%;
 
-  --popover: #222222;
-  --popover-foreground: #f2f2f2;
+  --popover: 0 0% 13%;
+  --popover-foreground: 0 0% 95%;
 
-  --primary: #3b8a3b;
-  --primary-foreground: #f2f2f2;
+  --primary: 120 48% 38%;
+  --primary-foreground: 0 0% 95%;
 
-  --secondary: #1a4d1a;
-  --secondary-foreground: #f2f2f2;
+  --secondary: 120 48% 20%;
+  --secondary-foreground: 0 0% 95%;
 
-  --muted: #1f1f1f;
-  --muted-foreground: #c7c7c7;
+  --muted: 0 0% 12%; /* #1f1f1f */
+  --muted-foreground: 0 0% 78%;
 
-  --accent: #a2d8a2;
-  --accent-foreground: #2e2e2e;
+  --accent: 120 47% 75%;
+  --accent-foreground: 0 0% 18%;
 
-  --destructive: #ef4444;
-  --destructive-foreground: #2e2e2e;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 18%;
 
-  --border: #ffffffcc; /* strong white borders on dark */
-  --input: #222222;
-  --ring: rgba(162, 216, 162, 0.5);
+  --border: 0 0% 89%;
+  --input: 0 0% 13%;
+  --ring: 120 47% 75%;
 
-  --chart-1: #3b8a3b;
-  --chart-2: #1a4d1a;
-  --chart-3: #a2d8a2;
-  --chart-4: #f2f2f2;
-  --chart-5: #ef4444;
-
-  --sidebar: #2e2e2e;
-  --sidebar-foreground: #f2f2f2;
-  --sidebar-primary: #3b8a3b;
-  --sidebar-primary-foreground: #f2f2f2;
-  --sidebar-accent: #a2d8a2;
-  --sidebar-accent-foreground: #2e2e2e;
-  --sidebar-border: #ffffffcc;
-  --sidebar-ring: rgba(162, 216, 162, 0.5);
-}
-
-@theme inline {
-  --font-sans: var(--font-body); /* Open Sans */
-  --font-mono: var(--font-geist-mono);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --chart-1: 120 48% 38%;
+  --chart-2: 120 48% 20%;
+  --chart-3: 120 47% 75%;
+  --chart-4: 0 0% 95%;
+  --chart-5: 0 84% 60%;
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
@@ -149,15 +87,9 @@
 
 @layer components {
   .win-chrome {
-    /* base card with crisp white stroke on dark; subtle stroke on light */
-    @apply rounded-lg border-2 shadow-md;
-    border-color: var(--border);
-  }
-  .dark .win-chrome {
-    border-color: var(--border);
+    @apply rounded-lg border-2 shadow-md border-border bg-card;
   }
   .win-header {
-    @apply border-b;
-    border-color: color-mix(in oklab, white 70%, transparent);
+    @apply border-b border-border bg-card;
   }
 }
